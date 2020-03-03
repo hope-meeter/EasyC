@@ -1,2 +1,2 @@
 # EasyC
-&lt;lilyRule>&lt;/lilyRule>
+[lilyRule][lilyRule]
