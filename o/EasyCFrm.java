@@ -27,6 +27,10 @@ import javax.swing.text.JTextComponent;
  * @author lily
  */
 public class EasyCFrm extends javax.swing.JFrame {
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
     String stdin = "";
     int magic = 0;
     Translator t = new Translator();
