@@ -1,10 +1,4 @@
-﻿/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-package o;
+﻿package o;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -117,13 +111,8 @@ public class Translator {
                 r = true;
             }
             for (String rule : rules) {
-
-                // System.out.println("***"+message+"***"+rule);
                 String[] str = rule.split("<lilyBr>");
-                // System.out.println("***"+message.replaceAll(str[0], ""));
-
                 if (!message.replaceAll(str[0], "").equals(message)) {
-                    // System.out.println(rule + "------hit");
                     if (r == true) {
                         result += "\n";
                     }

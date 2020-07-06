@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package o;
 
 import java.io.BufferedReader;
@@ -18,7 +12,6 @@ import java.io.Writer;
 public class ExecuteCmd {
     
     public String[] exec(String command, String parameter) throws IOException, InterruptedException {
-//        String cmd = "C:\\Users\\lily\\Desktop\\EasyC\\tools\\MinGW\\bin\\gcc.exe";
         String cmd = command;
         final Process process = Runtime.getRuntime().exec(cmd);
         if(!parameter.equals("")){
@@ -29,8 +22,6 @@ public class ExecuteCmd {
         String ges = printMessage(process.getErrorStream());
         
         int value = process.waitFor();
-//        System.out.println(value);
-//        System.out.println("gis:"+gis+"\n"+"ges:"+ges);
         String[] result = {gis,ges};
         return result;
     }
