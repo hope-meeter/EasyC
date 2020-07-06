@@ -25,7 +25,7 @@ public class Log {
             bw.newLine();
             bw.write(str);
             bw.close();
-        }catch(Exception e){
+        }catch(Exception igException){
             //do nothing..
         }
         
